@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
             else Toast.makeText(applicationContext, "Login Inválido", Toast.LENGTH_SHORT).show()
+
+            binding.editUsername.setText("")
+            binding.editPassword.setText("")
         }
     }
 }
