@@ -7,40 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button_converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="44dp"
+        android:text="Converter"
+        app:layout_constraintEnd_toEndOf="@+id/edit_celsius"
+        app:layout_constraintTop_toBottomOf="@+id/edit_celsius" />
+
     <EditText
         android:id="@+id/edit_celsius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="229dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Insira em Celsius"
         android:inputType="number|numberDecimal|numberSigned"
         app:layout_constraintBottom_toTopOf="@+id/button_converter"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_converter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="76dp"
-        android:text="Converter"
-        app:layout_constraintBottom_toTopOf="@+id/text_fahr"
-        app:layout_constraintStart_toStartOf="@+id/text_fahr"
-        app:layout_constraintTop_toBottomOf="@+id/edit_celsius" />
-
     <TextView
         android:id="@+id/text_fahr"
-        android:layout_width="147dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="289dp"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="181dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="88dp"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_converter" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
