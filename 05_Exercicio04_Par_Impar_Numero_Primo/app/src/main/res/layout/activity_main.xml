@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_verificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="49dp"
+        android:text="Verificar"
+        app:layout_constraintBottom_toTopOf="@+id/text_par_impar"
+        app:layout_constraintStart_toStartOf="@+id/text_par_impar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_numero1" />
+
+    <TextView
+        android:id="@+id/text_par_impar"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_primo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_verificar" />
+
+    <TextView
+        android:id="@+id/text_primo"
+        android:layout_width="91dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="122dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/text_par_impar"
+        app:layout_constraintTop_toBottomOf="@+id/text_par_impar" />
+
+    <EditText
+        android:id="@+id/edit_numero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="178dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="Insira um número"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button_verificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
